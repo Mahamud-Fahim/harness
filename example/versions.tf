@@ -9,7 +9,7 @@ terraform {
   }
 }
 
-# 2. Configure the AzureRM Provider
+
 provider "azurerm" {
-  features {}
+  # Configuration options
 }
