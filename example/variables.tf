@@ -9,8 +9,10 @@ variable "resource_group_name" {
   default = "harness-test-rg"
 }
 
-variable "AZURE_CLIENT_ID" {}
+variable "ARM_CLIENT_ID" {}
 
-variable "AZURE_TENANT_ID" {}
+variable "ARM_TENANT_ID" {}
 
-variable "AZURE_CLIENT_SECRET" {}
+variable "ARM_CLIENT_SECRET" {}
+
+variable "ARM_SUBSCRIPTION_ID" {}
