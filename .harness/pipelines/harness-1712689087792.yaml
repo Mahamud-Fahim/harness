@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_harness_1712689095531
+  name: Build harness
+  orgIdentifier: default
+  projectIdentifier: HarnessAzureTerraform
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: mahamudulgitconnector
+        repoName: harness
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
