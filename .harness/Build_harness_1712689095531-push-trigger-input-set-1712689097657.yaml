@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_1712689095531-push-trigger-input-set
+  identifier: Build_harness_1712689095531pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HarnessAzureTerraform
+  pipeline:
+    identifier: Build_harness_1712689095531
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
