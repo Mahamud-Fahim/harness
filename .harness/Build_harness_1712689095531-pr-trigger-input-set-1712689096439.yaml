@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_1712689095531-pr-trigger-input-set
+  identifier: Build_harness_1712689095531prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HarnessAzureTerraform
+  pipeline:
+    identifier: Build_harness_1712689095531
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
